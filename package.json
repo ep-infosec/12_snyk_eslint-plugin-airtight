@@ -1,0 +1,51 @@
+{
+  "name": "eslint-plugin-airtight",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "tsc",
+    "format": "prettier --write 'src/**/*.ts'",
+    "lint": "eslint 'src/**/*.ts' 'tests/**/*.ts'",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snyk/eslint-plugin-airtight.git"
+  },
+  "author": "Chris West (Faux) <solo-npm@goeswhere.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snyk/eslint-plugin-airtight/issues"
+  },
+  "homepage": "https://github.com/snyk/eslint-plugin-airtight#readme",
+  "files": [
+    "dist/",
+    "src/",
+    "README.md"
+  ],
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "^5.22.0",
+    "tslib": "^2.1.0",
+    "tsutils": "^3.21.0"
+  },
+  "devDependencies": {
+    "@types/mkdirp": "^1.0.1",
+    "@types/mocha": "^9.1.1",
+    "@types/tmp": "^0.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5",
+    "eslint": "^7",
+    "eslint-config-prettier": "^8.5.0",
+    "mkdirp": "^1.0.4",
+    "mocha": "^10.0.0",
+    "prettier": "~2.7.1",
+    "tmp": "^0.2.1",
+    "ts-node": "^10.7.0",
+    "typescript": "~4.8"
+  }
+}
